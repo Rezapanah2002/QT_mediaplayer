@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>664</width>
+    <height>486</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>591</width>
+      <height>361</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>400</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="res.qrc">
+      <normaloff>:/img/Icons/fullscreen.png</normaloff>:/img/Icons/fullscreen.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>382</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>50</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_3">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>382</y>
+      <width>511</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>403</y>
+      <width>75</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 0, 0);</string>
+    </property>
+    <item>
+     <property name="text">
+      <string>X 1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>X 0.5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>X 2</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>45</x>
+      <y>407</y>
+      <width>55</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(170, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Speed</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>664</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOpen">
+    <property name="title">
+     <string>Open</string>
+    </property>
+    <addaction name="actionChoose_To_Play"/>
+   </widget>
+   <widget class="QMenu" name="menuOption">
+    <property name="title">
+     <string>Option</string>
+    </property>
+    <addaction name="actionSetting"/>
+   </widget>
+   <widget class="QMenu" name="menuPlaylist">
+    <property name="title">
+     <string>Playlist</string>
+    </property>
+    <addaction name="actionPlaylist"/>
+   </widget>
+   <addaction name="menuOpen"/>
+   <addaction name="menuOption"/>
+   <addaction name="menuPlaylist"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>500</width>
+     <height>500</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPlaylist"/>
+   <addaction name="actionStop"/>
+   <addaction name="actionPreviouse"/>
+   <addaction name="actionRewinde"/>
+   <addaction name="actionPause"/>
+   <addaction name="actionPlay"/>
+   <addaction name="actionForward"/>
+   <addaction name="actionNext"/>
+   <addaction name="actionChoose_To_Play"/>
+   <addaction name="actionMute"/>
+   <addaction name="actionVolume"/>
+  </widget>
+  <action name="actionChoose_To_Play">
+   <property name="icon">
+    <iconset resource="resouces.qrc">
+     <normaloff>:/images/Icons/Open.png</normaloff>:/images/Icons/Open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Choose To Play</string>
+   </property>
+   <property name="toolTip">
+    <string>Open A Video</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset resource="resouces.qrc">
+     <normaloff>:/images/Icons/Stop.png</normaloff>:/images/Icons/Stop.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+   <property name="toolTip">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionPreviouse">
+   <property name="icon">
+    <iconset resource="resouces.qrc">
+     <normaloff>:/images/Icons/Previous.png</normaloff>:/images/Icons/Previous.png</iconset>
+   </property>
+   <property name="text">
+    <string>Previouse</string>
+   </property>
+   <property name="toolTip">
+    <string>Previouse</string>
+   </property>
+  </action>
+  <action name="actionRewinde">
+   <property name="icon">
+    <iconset resource="resouces.qrc">
+     <normaloff>:/images/Icons/Rewind.png</normaloff>:/images/Icons/Rewind.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rewinde</string>
+   </property>
+   <property name="toolTip">
+    <string>Rewinde</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="icon">
+    <iconset resource="resouces.qrc">
+     <normaloff>:/images/Icons/pause.png</normaloff>:/images/Icons/pause.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pause</string>
+   </property>
+   <property name="toolTip">
+    <string>Pause</string>
+   </property>
+  </action>
+  <action name="actionPlay">
+   <property name="icon">
+    <iconset resource="resouces.qrc">
+     <normaloff>:/images/Icons/Play.png</normaloff>:/images/Icons/Play.png</iconset>
+   </property>
+   <property name="text">
+    <string>Play</string>
+   </property>
+   <property name="toolTip">
+    <string>Play</string>
+   </property>
+  </action>
+  <action name="actionForward">
+   <property name="icon">
+    <iconset resource="resouces.qrc">
+     <normaloff>:/images/Icons/Forward.png</normaloff>:/images/Icons/Forward.png</iconset>
+   </property>
+   <property name="text">
+    <string>Forward</string>
+   </property>
+   <property name="toolTip">
+    <string>Forward</string>
+   </property>
+  </action>
+  <action name="actionNext">
+   <property name="icon">
+    <iconset resource="resouces.qrc">
+     <normaloff>:/images/Icons/Next.png</normaloff>:/images/Icons/Next.png</iconset>
+   </property>
+   <property name="text">
+    <string>Next</string>
+   </property>
+   <property name="toolTip">
+    <string>Next</string>
+   </property>
+  </action>
+  <action name="actionPlaylist">
+   <property name="icon">
+    <iconset resource="resouces.qrc">
+     <normaloff>:/images/Icons/Playlist.png</normaloff>:/images/Icons/Playlist.png</iconset>
+   </property>
+   <property name="text">
+    <string>Playlist</string>
+   </property>
+   <property name="toolTip">
+    <string>Playlist</string>
+   </property>
+  </action>
+  <action name="actionMute">
+   <property name="icon">
+    <iconset resource="resouces.qrc">
+     <normaloff>:/images/Icons/Mute.png</normaloff>:/images/Icons/Mute.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mute</string>
+   </property>
+   <property name="toolTip">
+    <string>Mute</string>
+   </property>
+  </action>
+  <action name="actionVolume">
+   <property name="icon">
+    <iconset resource="resouces.qrc">
+     <normaloff>:/images/Icons/Volume.png</normaloff>:/images/Icons/Volume.png</iconset>
+   </property>
+   <property name="text">
+    <string>Volume</string>
+   </property>
+   <property name="toolTip">
+    <string>Volume</string>
+   </property>
+  </action>
+  <action name="actionSetting">
+   <property name="icon">
+    <iconset resource="Icons/reso.qrc">
+     <normaloff>:/ima/setting.png</normaloff>:/ima/setting.png</iconset>
+   </property>
+   <property name="text">
+    <string>Setting</string>
+   </property>
+   <property name="toolTip">
+    <string>Setting</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+  <include location="Icons/reso.qrc"/>
+  <include location="resouces.qrc"/>
+ </resources>
+ <connections/>
+</ui>
