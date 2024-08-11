@@ -1,4 +1,4 @@
-#Simple Mediaplayer
+# Simple Mediaplayer
 This is an educational project for Advanced Programing course
 Use Qt and C++ languege
 Contains the following features:
